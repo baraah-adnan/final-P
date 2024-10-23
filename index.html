@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SheStore</title>
+    <!--file Css-->
+    <link rel="stylesheet" href="css/style.css">
+     <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container top-nav">
+            <a href="#" class="logo">S<span style="color:#ff6d1f;">H</span>E</a>
+            <form action="" class="search">
+                <input type="text" placeholder="search for product...">
+                <button type="submit">Search</button>
+            </form>
+            <div class="cart_header">
+                <div onclick="open()" class="icon_cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="count_item">0 </span>
+                </div>
+                <div class="total_price">
+                    <p>my cart:</p>
+                    <p class="price_cart_Head">$0</p>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="links container">
+            <ul>
+                <li class="active"><a href=""> Home</a></li>
+                <li><a href="">Allproduct</a></li>
+                <li><a href="">AboutUs</a></li>
+                <li><a href=""> Contact</a></li>
+            </ul>
+            <div class="login_signup">
+                <a href="#">Login <i class="fa-solid fa-right-to-bracket"></i> </a>
+                 <a href="#">sign-up <i class="fa-solid fa-user-plus"></i></a>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <div class="cart ">
+        <div class="top_cart">
+            <h3>My Cart<span>(0 item in cart)</span></h3>
+            <span class="close"><i class="fa-sharp-duotone fa-solid fa-circle-xmark"></i></span>
+        </div>
+        <div class="item_in_cart">
+            <div class="itemcart">
+                <img src="img/photo_2024-10-22_15-15-25.jpg">
+                <div class="cntent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+                <h4></h4>
+                <p class="price-cart">20$</p>
+                <button class="delet"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+              <div class="itemcart">
+                <img src="img/photo_2024-10-22_15-15-25.jpg">
+                <div class="cntent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
+                <h4></h4>
+                <p class="price-cart">20$</p>
+                <button class="delet"><i class="fa-solid fa-trash"></i></button>
+            </div>
+       
+        <div class="bottom_cart">
+        <div class="total">
+            <p>cart subtotal</p>
+            <p class="price-cart-total">$0</p>
+        </div>
+        <div class="button_cart">
+            <a href="" class="but_cart">proceed to checkout</a>
+            <button class="but_cart  trans_bg"  >shop more</button>
+        </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
