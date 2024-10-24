@@ -1,81 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SheStore</title>
-    <!--file Css-->
-    <link rel="stylesheet" href="css/style.css">
-     <!--font-awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FLATICON -->
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+    <!-- sweetalert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <title>Ecommerce Website</title>
 </head>
+
 <body>
-    <header>
-        <div class="container top-nav">
-            <a href="#" class="logo">S<span style="color:#ff6d1f;">H</span>E</a>
-            <form action="" class="search">
-                <input type="text" placeholder="search for product...">
-                <button type="submit">Search</button>
-            </form>
-            <div class="cart_header">
-                <div onclick="open()" class="icon_cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span class="count_item">0 </span>
+    <!-- START HEADER -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-container container">
+                <div class="header-contact">
+                    <span> +962 780 234 876</span>
+                    <span>Irbid-jordan</span>
                 </div>
-                <div class="total_price">
-                    <p>my cart:</p>
-                    <p class="price_cart_Head">$0</p>
-                </div>
+              
+                <a href="login-register.html" class="header-top-action">
+                    Log In / Sin Up
+                </a>
             </div>
         </div>
-        <nav>
-            <div class="links container">
-            <ul>
-                <li class="active"><a href=""> Home</a></li>
-                <li><a href="">Allproduct</a></li>
-                <li><a href="">AboutUs</a></li>
-                <li><a href=""> Contact</a></li>
-            </ul>
-            <div class="login_signup">
-                <a href="#">Login <i class="fa-solid fa-right-to-bracket"></i> </a>
-                 <a href="#">sign-up <i class="fa-solid fa-user-plus"></i></a>
+
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">
+                <img loading="lazy" src="image/photo_2024-10-24_19-40-26.jpg" alt="Logo" class="nav-logo-img">
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-menu-top">
+                    <a href="index.html" class="nav-menu-logo">
+                        <img loading="lazy" src="image/logo.svg" alt="Logo">
+                    </a>
+
+                    <div class="nav-close" id="nav-close">
+                        <i class="fi fi-rs-cross-small"></i>
+                    </div>
+                </div>
+
+
+                <ul class="nav-list">
+
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active-link">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="shop.html" class="nav-link">Shop</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="accounts.html" class="nav-link">My Accounts</a>
+                    </li>
+
+                    
+
+                    <li class="nav-item">
+                        <a href="login-register.html" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+
+                </ul>
+
+                <div class="header-search">
+                    <input type="text" placeholder="Search For Items..." class="form-input">
+                    <button class="search-btn" aria-label="searchBtn"><img loading="lazy" src="image/search.png"
+                            alt="Search"></button>
+                </div>
+
+
             </div>
+
+            <div class="header-user-actions">
+
+                <a href="wishlist.html" class="header-action-btn">
+                    <img loading="lazy" src="image/icon-heart.svg" alt="icon">
+                    <span class="count">3</span>
+                </a>
+
+                <a href="cart.html" class="header-action-btn">
+                    <img loading="lazy" src="image/icon-cart.svg" alt="icon">
+                    <span class="count">3</span>
+                </a>
+
+                <div class="header-action-btn nav-toggle" id="nav-toggle">
+                    <img loading="lazy" src="image/menu-burger.svg" alt="burger">
+                </div>
             </div>
         </nav>
     </header>
-    <div class="cart ">
-        <div class="top_cart">
-            <h3>My Cart<span>(0 item in cart)</span></h3>
-            <span class="close"><i class="fa-sharp-duotone fa-solid fa-circle-xmark"></i></span>
-        </div>
-        <div class="item_in_cart">
-            <div class="itemcart">
-                <img src="img/photo_2024-10-22_15-15-25.jpg">
-                <div class="cntent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
-                <h4></h4>
-                <p class="price-cart">20$</p>
-                <button class="delet"><i class="fa-solid fa-trash"></i></button>
+    <!-- END HEADER -->
+
+    <!-- Start MAIN -->
+    <main class="main">
+        <!-- START HOME -->
+        <section class="home section-lg">
+            <div class="home-container container grid">
+
+                <div class="home-content">
+                    <span class="home-subtitle">Lightning Fast</span>
+                    <h1 class="home-title">SHEIN By Baraah <span> Great Collection</span></h1>
+                    <p class="home-description">Get shein prodects in 1 day or less</p>
+                    <a href="shop.html" class="btn">Shop Now</a>
+                </div>
+
+                <img loading="lazy" src="image/7d4e961f507c52c1ad46edf731dbd031.jpg" class="home-img" alt="Home Image">
             </div>
-        </div>
-              <div class="itemcart">
-                <img src="img/photo_2024-10-22_15-15-25.jpg">
-                <div class="cntent">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </div>
-                <h4></h4>
-                <p class="price-cart">20$</p>
-                <button class="delet"><i class="fa-solid fa-trash"></i></button>
+        </section>
+        <!-- END HOME -->
+
+        <!-- START CATEGORIES -->
+        <section class="categories container section">
+            <h3 class="section-title"><span>Popular</span> Categories</h3>
+            <div class="categories-container swiper">
+                <div class="swiper-wrapper">
+
+                    <a href="shop.html" class="category-item swiper-slide">
+                        <img loading="lazy" src="image/shettjpg.jpg" alt="Cat 1" class="category-img">
+                        <h3 class="category-title">T-Shirt</h3>
+                    </a>
+
+                    <a href="shop.html" class="category-item swiper-slide">
+                        <img loading="lazy" src="image/sheinbagejpg.jpg" alt="Cat 2" class="category-img">
+                        <h3 class="category-title">Bags</h3>
+                    </a>
+
+                    <a href="shop.html" class="category-item swiper-slide">
+                        <img loading="lazy" src="image/sandaljpg.jpg" alt="Cat 3" class="category-img">
+                        <h3 class="category-title">Sandal</h3>
+                    </a>
+
+                    <a href="shop.html" class="category-item swiper-slide">
+                        <img loading="lazy" src="image/accse.jpg" alt="Cat 4" class="category-img">
+                        <h3 class="category-title">Accessories</h3>
+                    </a>
+                    <a href="shop.html" class="category-item swiper-slide">
+                        <img loading="lazy" src="image/sheshooes.jpg" alt="Cat 5" class="category-img">
+                        <h3 class="category-title">Shoes</h3>
+                    </a>
+
+
+                    <a href="shop.html" class="category-item swiper-slide">
+                        <img loading="lazy" src="image/category-6.jpg" alt="Cat 6" class="category-img">
+                        <h3 class="category-title">Pillowcase</h3>
+                    </a>
+
+                    <a href="shop.html" class="category-item swiper-slide">
+                        <img loading="lazy" src="image/category-7.jpg" alt="Cat 7" class="category-img">
+                        <h3 class="category-title">Jumpsuit</h3>
+                    </a>
+
+                    <a href="shop.html" class="category-item swiper-slide">
+                        <img loading="lazy" src="image/category-8.jpg" alt="Cat 8" class="category-img">
+                        <h3 class="category-title">Hats</h3>
+                    </a>
+
+
+                </div>
+                <div class="swiper-button-next" onclick="">
+                    <i class="fi fi-rs-angle-right"></i>
+                </div>
+
+                <div class="swiper-button-prev" onclick="">
+                    <i class="fi fi-rs-angle-left"></i>
+                </div>
+
+
             </div>
+        </section>
+        <!-- END CATEGORIES -->
+
+        <!-- START PRODUCTS -->
+        <section class="products section container">
+            <div class="tap-btns">
+                <span class="tap-btn" data-target="#new-added">New added</span>
+            </div>
+
+            <div class="tap-items">
+                <div class="tap-item active-tab" content id="featured">
+                    <div class="products-container grid"></div>
+                </div>
+            </div>
+        </section>
+        <!-- END PRODUCTS -->
+
        
-        <div class="bottom_cart">
-        <div class="total">
-            <p>cart subtotal</p>
-            <p class="price-cart-total">$0</p>
-        </div>
-        <div class="button_cart">
-            <a href="" class="but_cart">proceed to checkout</a>
-            <button class="but_cart  trans_bg"  >shop more</button>
-        </div>
-        </div>
-    </div>
-    <script src="js/main.js"></script>
+     
+
+       
+
+        <!-- START NEWSLETTER -->
+        <!-- END NEWSLETTER -->
+    </main>
+    <!-- END MAIN -->
+
+    <!-- START FOOTER -->
+    <!-- End FOOTER -->
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="JS/main.js"></script>
+    <script src="JS/card.js"></script>
+    <script src="JS/card.js"></script>
+    <script src="JS/details.js"></script>
+    <script src="JS/newsletter.js"></script>
+    <script src="JS/newsletter.js"></script>
+    <script src="JS/footer.js"></script>
 </body>
+
 </html>
